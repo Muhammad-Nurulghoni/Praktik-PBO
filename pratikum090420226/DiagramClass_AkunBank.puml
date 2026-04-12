@@ -1,0 +1,17 @@
+@startuml
+class AkunBankEnkapsulasi {
+  - noRekening : String
+  - namaNasabah : String
+  - saldo : double = 10000000
+
+  + setNoRekening(noRekening : String) : void
+  + getNoRekening() : String
+  + setNamaNasabah(namaNasabah : String) : void
+  + getNamaNasabah() : String
+  + getSaldo() : double
+  + deposit(jumlah : double) : void
+  + withdraw(jumlah : double) : void
+  + tampilkanInfo() : void
+}
+@enduml
+ 
